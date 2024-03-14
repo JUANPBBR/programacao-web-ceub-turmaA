@@ -1,9 +1,27 @@
  h1,h2,h3, h4 {
-            color: blue;
-            background-color: yellow;
+            /*color: blue;/*
+           /* background-color: yellow;/*
         }
         p{
-            color: yellow;
+           /* color: yellow;/*/*
+        }
+
+        .títulos {
+            background-color: yellow;
+            color: blue;
+
+        padding: 30px  ;
+        border: 5px dotted red;
+        margin: 20px 40px 30px 10px  ;
+
+        }
+
+        #parágrafos {
+
+        }
+
+        .input-bao{
+            padding: 40px;
         }
 
 
