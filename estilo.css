@@ -1,32 +1,29 @@
- h1,h2,h3, h4 {
-            /*color: blue;/*
-           /* background-color: yellow;/*
-        }
-        p{
-           /* color: yellow;/*/*
-        }
+h1, h2, h3, h4 {
+    /* color: blue; */
+    /* background-color: yellow; /* tudo aqui é comentário */ */
+}
 
-        .títulos {
-            background-color: yellow;
-            color: blue;
+p {
+    color: yellow;
+}
 
-        padding: 30px  ;
-        border: 5px dotted red;
-        margin: 20px 40px 30px 10px  ;
+.titulos {
+    background-color: yellow;
+    color: blue;
 
-        }
+    padding: 30px;
+    border: 5px dotted red;
+    margin: 20px 40px 30px 10px;
+}
 
-        #parágrafos {
-            background-color: black;
-            color: yellow;
-            padding: 50px;
+.input-bao {
+    padding: 40px;
+}
 
-        }
-
-        .input-bao{
-            padding: 40px;
-        }
-
-
+#paragrafos {
+    background-color: black;
+    color: yellow;
+    padding: 50px;
+}
 
     
