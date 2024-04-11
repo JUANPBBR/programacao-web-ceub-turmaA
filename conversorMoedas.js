@@ -13,6 +13,10 @@ let valoresConversao = {
     }
 }
 
+let valorUsuario = document.getElementById("valor-usuario");
+valorUsuario.addEventListener("keypress",function(event) {
+
+});
 
 function converter() {
     let valorUsuario = document.getElementById("valor-usuario").value;
@@ -20,10 +24,27 @@ function converter() {
     let moedaOrigem  = document.getElementById("moeda1").value;
     let moedaDestino = document.getElementById("moeda2").value;
 
+    if(moedaOrigem == moedaDestino) {
+        alert("As moedas são iguais, não é possível converter");
+        return;
+    }
+
     let conversao = valorUsuario * valoresConversao[moedaOrigem][moedaDestino];
 
+    let simbolo = "";
+    if (moedaDestino == "real") {
+        simbolo = "R$";
+    }
+    if (moedaDestino == "dolar") {
+        simbolo = "US$"
+    }
+    if (moedaDestino == "euro") {
+        simbolo = "€";
+    }
+
+
     let paragrafoResultado = document.getElementById("resultado");
-    paragrafoResultado.textContent = conversao;
+    paragrafoResultado.textContent = simbolo + " " + conversao.toFixed(2);
 
 }
 
@@ -34,7 +55,4 @@ function inverter() {
 
     document.getElementById("moeda1").value = moeda2;
     document.getElementById("moeda2").value = moeda1;
-
-    //console.log(moeda1);
-    //console.log(moeda2);
 }
